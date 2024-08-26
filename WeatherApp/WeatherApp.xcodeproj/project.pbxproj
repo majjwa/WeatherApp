@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		135EBC8B2C7CE3A90049A398 /* weatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135EBC8A2C7CE3A90049A398 /* weatherModel.swift */; };
+		135EBC8D2C7CE3C60049A398 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135EBC8C2C7CE3C50049A398 /* ApiManager.swift */; };
+		135EBC902C7CE7AA0049A398 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 135EBC8F2C7CE7AA0049A398 /* Alamofire */; };
+		135EBC952C7CE7C00049A398 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 135EBC942C7CE7C00049A398 /* SDWebImage */; };
+		135EBC9D2C7CF4B60049A398 /* weatherAppPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135EBC9C2C7CF4B60049A398 /* weatherAppPresenter.swift */; };
 		139259CE2C7CD3A500346E86 /* WeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139259CD2C7CD3A500346E86 /* WeatherAppApp.swift */; };
 		139259D02C7CD3A500346E86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139259CF2C7CD3A500346E86 /* ContentView.swift */; };
 		139259D22C7CD3A900346E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 139259D12C7CD3A900346E86 /* Assets.xcassets */; };
@@ -14,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		135EBC8A2C7CE3A90049A398 /* weatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherModel.swift; sourceTree = "<group>"; };
+		135EBC8C2C7CE3C50049A398 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		135EBC9C2C7CF4B60049A398 /* weatherAppPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherAppPresenter.swift; sourceTree = "<group>"; };
 		139259CA2C7CD3A500346E86 /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		139259CD2C7CD3A500346E86 /* WeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppApp.swift; sourceTree = "<group>"; };
 		139259CF2C7CD3A500346E86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,12 +34,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				135EBC952C7CE7C00049A398 /* SDWebImage in Frameworks */,
+				135EBC902C7CE7AA0049A398 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		135EBC842C7CE3230049A398 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				135EBC8A2C7CE3A90049A398 /* weatherModel.swift */,
+				135EBC8C2C7CE3C50049A398 /* ApiManager.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		135EBC872C7CE3580049A398 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				139259CD2C7CD3A500346E86 /* WeatherAppApp.swift */,
+				139259CF2C7CD3A500346E86 /* ContentView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		135EBC892C7CE36D0049A398 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				135EBC9C2C7CF4B60049A398 /* weatherAppPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
 		139259C12C7CD3A500346E86 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +87,9 @@
 		139259CC2C7CD3A500346E86 /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				139259CD2C7CD3A500346E86 /* WeatherAppApp.swift */,
-				139259CF2C7CD3A500346E86 /* ContentView.swift */,
+				135EBC892C7CE36D0049A398 /* presenter */,
+				135EBC872C7CE3580049A398 /* view */,
+				135EBC842C7CE3230049A398 /* model */,
 				139259D12C7CD3A900346E86 /* Assets.xcassets */,
 				139259D32C7CD3A900346E86 /* Preview Content */,
 			);
@@ -83,6 +120,10 @@
 			dependencies = (
 			);
 			name = WeatherApp;
+			packageProductDependencies = (
+				135EBC8F2C7CE7AA0049A398 /* Alamofire */,
+				135EBC942C7CE7C00049A398 /* SDWebImage */,
+			);
 			productName = WeatherApp;
 			productReference = 139259CA2C7CD3A500346E86 /* WeatherApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +152,10 @@
 				Base,
 			);
 			mainGroup = 139259C12C7CD3A500346E86;
+			packageReferences = (
+				135EBC8E2C7CE7AA0049A398 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				135EBC932C7CE7C00049A398 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 139259CB2C7CD3A500346E86 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +182,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				135EBC8D2C7CE3C60049A398 /* ApiManager.swift in Sources */,
 				139259D02C7CD3A500346E86 /* ContentView.swift in Sources */,
+				135EBC8B2C7CE3A90049A398 /* weatherModel.swift in Sources */,
 				139259CE2C7CD3A500346E86 /* WeatherAppApp.swift in Sources */,
+				135EBC9D2C7CF4B60049A398 /* weatherAppPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +390,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		135EBC8E2C7CE7AA0049A398 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+		135EBC932C7CE7C00049A398 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		135EBC8F2C7CE7AA0049A398 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 135EBC8E2C7CE7AA0049A398 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		135EBC942C7CE7C00049A398 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 135EBC932C7CE7C00049A398 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 139259C22C7CD3A500346E86 /* Project object */;
 }
