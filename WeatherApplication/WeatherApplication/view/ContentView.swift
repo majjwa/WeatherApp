@@ -84,9 +84,10 @@ var body: some View {
                                         KFImage(URL(string: "https:\(forecastDay.day.condition.icon)"))
                                             .resizable()
                                             .scaledToFit()
-                                            .frame(width: 60, height: 60)
+                                            .frame(width: 120, height: 60)
                                         
-                                        Text("\(String(format: "%.f", forecastDay.day.maxtemp_c))°")
+                                        Text("\(String(format: "%.f", forecastDay.day.maxtemp_c))°") .font(.title3)
+                                            .foregroundColor(fontColor)
                                         
                                         Text("- \(String(format: "%.f", forecastDay.day.mintemp_c))°")
                                             .font(.title3)
@@ -105,20 +106,20 @@ var body: some View {
                         
                         VStack {
                             HStack(spacing: 60) {
-                                Text("Visibility").font(.title)
-                                Text("Humidity").font(.title)
+                                Text("Visibility").font(.title).foregroundColor(fontColor)
+                                Text("Humidity").font(.title).foregroundColor(fontColor)
                             }
                             HStack(spacing: 100) {
-                                Text("\(String(format: "%.f", weather.current.vis_km)) Km").font(.title)
-                                Text("\(String(format: "%.f", weather.current.humidity)) %").font(.title)
+                                Text("\(String(format: "%.f", weather.current.vis_km)) Km").font(.title).foregroundColor(fontColor)
+                                Text("\(String(format: "%.f", weather.current.humidity)) %").font(.title).foregroundColor(fontColor)
                             }
                             HStack(spacing: 60) {
-                                Text("Feels like").font(.title)
-                                Text("Pressure").font(.title)
+                                Text("Feels like").font(.title).foregroundColor(fontColor)
+                                Text("Pressure").font(.title).foregroundColor(fontColor)
                             }
                             HStack(spacing: 100) {
-                                Text("\(String(format: "%.f", weather.current.feelslike_c))°").font(.title)
-                                Text("\(String(format: "%.f", weather.current.pressure_in))").font(.title)
+                                Text("\(String(format: "%.f", weather.current.feelslike_c))°").font(.title).foregroundColor(fontColor)
+                                Text("\(String(format: "%.f", weather.current.pressure_in))").font(.title).foregroundColor(fontColor)
                             }
                         }
                     } else {
