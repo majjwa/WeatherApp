@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		138BCA0A2C7DC32700DB1113 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 138BCA092C7DC32700DB1113 /* Kingfisher */; };
+		138BCA0E2C7DEC5400DB1113 /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138BCA0D2C7DEC5400DB1113 /* NextView.swift */; };
 		13D2E7832C7DAE8200B1C4DF /* WeatherApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D2E7822C7DAE8200B1C4DF /* WeatherApplicationApp.swift */; };
 		13D2E7852C7DAE8200B1C4DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D2E7842C7DAE8200B1C4DF /* ContentView.swift */; };
 		13D2E7872C7DAE8400B1C4DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13D2E7862C7DAE8400B1C4DF /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		138BCA0D2C7DEC5400DB1113 /* NextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
 		13D2E77F2C7DAE8200B1C4DF /* WeatherApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13D2E7822C7DAE8200B1C4DF /* WeatherApplicationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApplicationApp.swift; sourceTree = "<group>"; };
 		13D2E7842C7DAE8200B1C4DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				13D2E7822C7DAE8200B1C4DF /* WeatherApplicationApp.swift */,
 				13D2E7842C7DAE8200B1C4DF /* ContentView.swift */,
+				138BCA0D2C7DEC5400DB1113 /* NextView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				13D2E7852C7DAE8200B1C4DF /* ContentView.swift in Sources */,
 				13D2E7942C7DAED300B1C4DF /* weatherModel.swift in Sources */,
 				13D2E7832C7DAE8200B1C4DF /* WeatherApplicationApp.swift in Sources */,
+				138BCA0E2C7DEC5400DB1113 /* NextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
