@@ -1,15 +1,11 @@
 //
 //  weatherModel.swift
-//  WeatherApp
+//  WeatherApplication
 //
-//  Created by marwa maky on 26/08/2024.
+//  Created by marwa maky on 27/08/2024.
 //
 
 import Foundation
-struct Response: Codable {
-   let success: Int
-   let result: [WeatherResponse]
-}
 
 struct WeatherResponse: Codable {
     let location: Location
@@ -59,7 +55,7 @@ struct CurrentWeather: Codable {
     let uv: Double
     let gust_mph: Double
     let gust_kph: Double
-   // let air_quality: AirQuality
+ 
 }
 
 struct Forecast: Codable {
@@ -118,14 +114,3 @@ struct Condition: Codable {
     let icon: String
     let code: Int
 }
-//
-//struct AirQuality: Codable {
-//    let co: Double
-//    let no2: Double
-//    let o3: Double
-//    let so2: Double
-//    let pm2_5: Double
-//    let pm10: Double
-//    let us_epa_index: Int?
-//    let gb_defra_index: Int?
-//}
