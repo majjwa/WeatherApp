@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		138BCA0A2C7DC32700DB1113 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 138BCA092C7DC32700DB1113 /* Kingfisher */; };
 		13D2E7832C7DAE8200B1C4DF /* WeatherApplicationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D2E7822C7DAE8200B1C4DF /* WeatherApplicationApp.swift */; };
 		13D2E7852C7DAE8200B1C4DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D2E7842C7DAE8200B1C4DF /* ContentView.swift */; };
 		13D2E7872C7DAE8400B1C4DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13D2E7862C7DAE8400B1C4DF /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				138BCA0A2C7DC32700DB1113 /* Kingfisher in Frameworks */,
 				13D2E7A02C7DAF6100B1C4DF /* Alamofire in Frameworks */,
 				13D2E79B2C7DAF4900B1C4DF /* SDWebImage in Frameworks */,
 			);
@@ -123,6 +125,7 @@
 			packageProductDependencies = (
 				13D2E79A2C7DAF4900B1C4DF /* SDWebImage */,
 				13D2E79F2C7DAF6100B1C4DF /* Alamofire */,
+				138BCA092C7DC32700DB1113 /* Kingfisher */,
 			);
 			productName = WeatherApplication;
 			productReference = 13D2E77F2C7DAE8200B1C4DF /* WeatherApplication.app */;
@@ -155,6 +158,7 @@
 			packageReferences = (
 				13D2E7992C7DAF4900B1C4DF /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				13D2E79E2C7DAF6100B1C4DF /* XCRemoteSwiftPackageReference "Alamofire" */,
+				138BCA082C7DC32600DB1113 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 13D2E7802C7DAE8200B1C4DF /* Products */;
 			projectDirPath = "";
@@ -392,6 +396,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		138BCA082C7DC32600DB1113 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
 		13D2E7992C7DAF4900B1C4DF /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
@@ -411,6 +423,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		138BCA092C7DC32700DB1113 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 138BCA082C7DC32600DB1113 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		13D2E79A2C7DAF4900B1C4DF /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 13D2E7992C7DAF4900B1C4DF /* XCRemoteSwiftPackageReference "SDWebImage" */;
